@@ -138,7 +138,7 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;
         </p>
         <p>I am pursuing my M.S. in Computer Science, advised by <a href="https://answ.in/" target="_blank">Dr. Shengwei An</a>. My research focuses on AI security in generative models — I worked on backdoor attacks on Text-to-Image diffusion models with Dr. An, and am currently working on backdoor defenses in Vision-Language-Action (VLA) models with both Dr. An and <a href="https://mingijeong.github.io/" target="_blank">Dr. Minji Jeong</a>.
         <p>
-          Prior to Virginia Tech, I worked in the industry as a software engineer at <a href="https://www.deloitte.com" target="_blank">Deloitte</a> building React Native mobile apps. I had the good fortune of being advised by advised by <a href="https://ee.iisc.ac.in/~prasantg/" target="_blank">Dr. Prasanta Kumar Ghosh</a> and mentored by <a href="https://sites.google.com/view/tanuka-website/home" target="_blank">Dr. Tanuka Bhattacharjee</a> as a research intern at the <a href="https://iisc.ac.in" target="_blank">Indian Institute of Science</a> where I was introduced to deep lerning and speech processing.</p>
+          Prior to Virginia Tech, I worked in the industry as a software engineer at <a href="https://www.deloitte.com" target="_blank">Deloitte</a> building React-Native mobile apps. I had the good fortune of being advised by advised by <a href="https://ee.iisc.ac.in/~prasantg/" target="_blank">Dr. Prasanta Kumar Ghosh</a> and mentored by <a href="https://sites.google.com/view/tanuka-website/home" target="_blank">Dr. Tanuka Bhattacharjee</a> as a research intern at the <a href="https://iisc.ac.in" target="_blank">Indian Institute of Science</a> where I was introduced to deep lerning and speech processing.</p>
           
           
         <div class="callout">
@@ -182,9 +182,9 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;
       </div>
       <div class="exp-org">Virginia Tech · Advisor: Dr. Shengwei An · Blacksburg, VA</div>
       <ul>
-        <li>Developed a stealthy white-box backdoor attack on text-to-image diffusion models by fine-tuning Stable Diffusion v1.4 with a multi-token trigger sampling strategy and dual-objective loss.</li>
-        <li>Added cross-attention regularization loss (normalized MSE at t=999) applied selectively to U-Net blocks, aligning triggered activations with benign ones to evade activation-based defenses.</li>
-        <li>Validated stealth via t-SNE on cross-attention activations; benchmarked against SOTA defenses and reduced the strongest defense (NaviT2I) AUROC to 0.53 vs. 0.85–0.99 for prior attacks.</li>
+        <li>Developed a stealthy backdoor attack on text-to-image diffusion models using a multi-token trigger strategy and dual-objective fine-tuning of Stable Diffusion.</li>
+        <li>Designed a cross-attention regularization loss to align triggered and benign activations, evading activation-based defenses.</li>
+        <li>Bypassed the strongest SOTA defense (NaviT2I), reducing its detection AUROC from 0.85–0.99 to 0.53; validated via t-SNE analysis.</li>
       </ul>
     </div>
 
@@ -193,7 +193,7 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;
         <span class="exp-role">Graduate Teaching Assistant — CS 3114/5040</span>
         <span class="exp-date">Jan 2026 – May 2026</span>
       </div>
-      <div class="exp-org">Virginia Tech · Data Structures &amp; Algorithms · Blacksburg, VA</div>
+      <div class="exp-org">Virginia Tech · Data Structures &amp; Algorithms (CS3114/CS5040) · Blacksburg, VA</div>
       <ul>
         <li>Held office hours to assist students with linked lists, hash tables, trees, and sorting algorithms.</li>
         <li>Evaluated 40+ student project submissions on correctness, efficiency, and design.</li>
@@ -207,11 +207,11 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;
       </div>
       <div class="exp-org">Deloitte · Bangalore, India</div>
       <ul>
-        <li>Built React Native B2B mobile apps for India's leading retail lifestyle company, used by store and business managers to track performance and sales targets.</li>
-        <li>Integrated an LLM-powered chatbot enabling natural-language report retrieval, eliminating multi-tab navigation and improving UX significantly.</li>
-        <li>Introduced a geo-tagged checklist feature that enforced on-site store reviews, saving <strong>00K/year</strong> by replacing an external subscription app.</li>
-        <li>Implemented MFA login, competitor sales tracking, and image/video carousel testimonials.</li>
-        <li>Published Android (APK) and iOS (IPA) builds to Google Play Store and App Store via Android Studio and Xcode.</li>
+        <li>Built React-Native B2B mobile apps for India's leading retail lifestyle company, used by store and business managers to track performance and sales targets.</li>
+        <li>Integrated a chatbot that allows users to prompt specific reports and redirects them to the relevant screen, improving UX by eliminating multi-tab navigation.</li>
+        <li>Introduced a geo-tagged checklist feature for on-site store reviews, saving <strong>$100K/year</strong> by replacing an external subscription-based app.</li>
+        <li>Implemented MFA, competitor sales tracking, and image/video carousel testimonials.</li>
+        <li>Published Android apps (APKs) on the Google Play Store using Android Studio; released iOS builds (IPAs) using Xcode, collaborating with the DevOps team.</li>
       </ul>
     </div>
 
@@ -237,11 +237,12 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;
       <li class="pub-item">
         <span class="pub-badge emnlp">Interspeech</span>
         <div>
-          <div class="pub-title">Exploring Syllable Discriminability during Diadochokinetic Task with Increasing Dysarthria Severity for Patients with Amyotrophic Lateral Sclerosis</div>
-          <div class="pub-authors"><strong>Neelesh Samptur</strong>, Tanuka Bhattacharjee, Anirudh Chakravarty K, Seena Vengalil, Yamini Belur, Atchayaram Nalini, Prasanta Kumar Ghosh</div>
-          <div class="pub-venue">Interspeech 2024</div>
+          <li>Explored syllable discriminability of dysarthric speech across varying ALS severities using Signal Processing techniques via MATLAB and deep learning models in PyTorch.</li>
+          <li>Built supervised speech classification models (ANN, CNN, LSTM in PyTorch) achieving <strong>99.46% accuracy</strong> using HuBERT representations for ALS dysarthric speech.</li>
+          <li>Automated waveform segmentation via MATLAB; extracted features using DeCoAR, HuBERT, NPC, TERA, and Wav2Vec 2.0 from S3PRL.</li>
+          <li>Automatic methods outperformed human classification by 15.93% and 50.37% (absolute) for the control group and most severe patients respectively.</li>
           <div class="pub-links">
-            <a href="#">Paper</a>
+            <a href="https://www.isca-archive.org/interspeech_2024/samptur24_interspeech.pdf">Paper</a>
           </div>
           <div class="pub-note">Oral presentation</div>
         </div>
@@ -249,7 +250,7 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;
     </ol>
   </section>
 
-  <!-- Projects -->
+  <!-- Projects
   <section id="projects">
     <h2 class="section-title">Projects</h2>
 
@@ -287,7 +288,7 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;
         <li>Designed two microservices — a producer (HTTP server) and a consumer — communicating via RabbitMQ for high availability and fault tolerance.</li>
       </ul>
     </div>
-  </section>
+  </section> -->
 
   <!-- Skills -->
   <section id="skills">
