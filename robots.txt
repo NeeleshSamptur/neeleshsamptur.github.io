@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://neeleshsamptur.github.io/sitemap.xml
